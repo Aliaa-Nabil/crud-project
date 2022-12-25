@@ -15,7 +15,7 @@
     rel="stylesheet">
 
   <!-- /////BOOTSTRAP-FILES//////// -->
-    
+
   <link href="./css/bootstrap.min.css" rel="stylesheet" />
   <link href="./css/bootstrap-icons.css" rel="stylesheet" />
 
@@ -25,58 +25,63 @@
 
 <body>
 
-  <div class="crud container-fluid  ">
+  <div class="crud   ">
     <button class="theme-changer  ">Change Theme</button>
     <h2>CRUD PROJECT</h2>
-   
-    <div class="inputs row">
 
-      <label for="tilte col-12">Title :
-        <input type="text" id="title" placeholder="title">
-      </label>
+    <div class="inputs ">
 
-      <div class="price-container col-12 ">
+      <div class="price-container container ">
 
-       
+        <div class="row gx-5 gy-1 w-100 d-flex justify-content-center ">
 
-        <label for="price ">Price :
-          <input type="number" onkeyup="getTotal()" id="price" placeholder="price">
-        </label>
-        <label for="taxes">Taxes :
-          <input type="number" onkeyup="getTotal()" id="taxes" placeholder="taxes">
-        </label>
-        <label for="ads ">Ads :
-          <input type="number" onkeyup="getTotal()" id="ads" placeholder="ads">
-        </label>
-        <label for="discount ">Discount :
-          <input type="number" onkeyup="getTotal()" id="discount" placeholder="discount">
-        </label>
-        <div class="total" id="total">total:</div>
-      
-   
+          <label class="col-10" for="title">Title :
+            <input type="text" id="title" placeholder="title">
+          </label>
+
+          <label class="col-lg-2 col-sm-5 " for="price ">Price :
+            <input type="number" onkeyup="getTotal()" id="price" placeholder="price">
+          </label>
+          <label class="col-lg-2 col-sm-5" for="taxes">Taxes :
+            <input type="number" onkeyup="getTotal()" id="taxes" placeholder="taxes">
+          </label>
+          <label class="col-lg-2 col-sm-5" for="ads ">Ads :
+            <input type="number" onkeyup="getTotal()" id="ads" placeholder="ads">
+          </label>
+          <label class="col-lg-2 col-sm-5" for="discount ">Discount :
+            <input type="number" onkeyup="getTotal()" id="discount" placeholder="discount">
+          </label>
+
+          <label class="col-lg-1 col-sm-10" for="">
+            <div class="total w-100" id="total">total:</div>
+          </label>
+
+          <label class="col-lg-5 col-sm-5" for="count">count
+            <input type="number" id="count" placeholder="count">
+          </label>
+
+          <label class=" col-lg-5 col-sm-5" for="category">category
+            <input type="text" id="category" placeholder="category">
+          </label>
+
+          <button class="col-5 btn" id="submit">Create</button>
+
+        </div>
 
       </div>
 
-      <label for="count col-12">count
-        <input type="number" id="count" placeholder="count">
-      </label>
-      <label for="category col-12">category
-        <input type="text" id="category" placeholder="category">
-      </label>
-      <button id="submit">Create</button>
     </div>
 
-
-    <div class="outputs row">
-      <div class="srch-section col-12">
+    
+    <div class="outputs ">
+      <div class="srch-section ">
         <input onkeyup="searchData(this.value)" type="text" id="search" placeholder="search">
-        <div class="srch-btn">
-          <button onclick="getSrchMode(this.id)" id="searchTitle">search by title</button>
-          <button onclick="getSrchMode(this.id)" id="searchCategory">search by categoty</button>
+        <div class=" d-flex justify-content-between">
+          <button class="srch-btn btn" onclick="getSrchMode(this.id)" id="searchTitle">search by title</button>
+          <button class="srch-btn btn" onclick="getSrchMode(this.id)" id="searchCategory">search by categoty</button>
         </div>
       </div>
-      <table class="col-12">
-
+      <table class="">
         <tr>
           <th>id</th>
           <th>title</th>
@@ -95,11 +100,11 @@
         </tbody>
       </table>
     </div>
-    
+
   </div>
 
   <script src="js/main.js"></script>
-  
+
 
 </body>
 

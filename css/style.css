@@ -5,18 +5,19 @@
   --greyLight-1: #e4ebf5;
   --greyLight-2: #c8d0e7;
   --primary-dark: #5b0eeb;
-  --text-color :black;
-  --btn-color :black;
+  --text-color: black;
+  --btn-color: black;
 }
-.dark-theme-var{
- --primary-light: #000000;
+
+.dark-theme-var {
+  --primary-light: #000000;
   --primary: #040023;
   --white: #313131;
   --greyLight-1: #1e2127;
   --greyLight-2: #000000;
   --primary-dark: #1f0158;
-   --text-color :white;
-   --btn-color :white;
+  --text-color: white;
+  --btn-color: white;
 }
 
 * {
@@ -27,31 +28,32 @@
   font-size: 18px;
   color: var(--text-color);
 }
-body{
-  position:relative ;
+
+body {
+  position: relative;
   background: var(--greyLight-1);
 }
-.theme-changer{
-position: absolute;
-top: 2%;
-right: 2%;
-margin: 0%;
-width: fit-content;
-height: fit-content;
-padding: 10px;
-font-size: 16px;
-letter-spacing: 1px;
-background-color:transparent;
-border: solid 2px #5b0eeb;
-color: #5b0eeb;
-box-shadow: none;
+
+.theme-changer {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  margin: 0%;
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  background-color: transparent;
+  border: solid 2px #5b0eeb;
+  color: #5b0eeb;
+  box-shadow: none;
 }
 
 
 .crud {
   width: 90%;
   height: fit-content;
-
   padding: 2% 5%;
   background: var(--greyLight-1);
   display: flex;
@@ -70,28 +72,41 @@ h2 {
   justify-content: baseline;
   align-items: center;
 }
+
 .price-container input {
+  height: 100px;
+  /* width: 90%; */
+}
+
+/* inputs */
+
+.inputs{
   width: 90%;
 }
-/* inputs */
+
 input {
+  display: flex;
+  justify-content: center;
   width: 100%;
-  height: 40px;
+  height: 100px;
   outline: none;
   border: none;
   border-radius: 5px;
   padding: 5px;
-  margin: 10px 5px;
   box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2),
     inset -0.2rem -0.2rem 0.5rem var(--white);
   background: none;
   transition: 0.5s;
   position: relative;
+  font-size: 30px;
+  font-weight: 700;
 }
 
 label {
   color: transparent;
-  font-size: 14px;
+  font-size: 20px;
+  font-weight: 700;
+  width: 50%;
 }
 
 label:focus-within {
@@ -103,34 +118,38 @@ input:focus {
   box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2),
     -0.2rem -0.2rem 0.5rem var(--white);
 }
+
 input:hover {
   box-shadow: inset 0.5rem 0.5rem 1rem var(--greyLight-2),
     inset -0.5rem -0.5rem 1rem var(--white);
 }
 
 .total {
-  color: white;
-  width: 20%;
-  background-color: #6d5dfc;
+  display: flex;
+  justify-content: center;
+  height: 80px;
   border-radius: 5px;
-  padding: 8px;
-  margin-top: 25px;
-  box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2),
-    -0.2rem -0.2rem 0.5rem var(--white);
+  margin-top: 30px;
+  padding: 5px;
+  box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2),
+    inset -0.2rem -0.2rem 0.5rem var(--white);
+  transition: 0.5s;
+  font-size: 30px;
+  font-weight: 700;
+
 }
 
 
 /* buttons */
-button {
+.btn {
   display: flex;
   align-items: center;
   justify-content: center;
   outline: none;
   border: none;
   cursor: pointer;
-  margin: 10px auto;
-  width: 40%;
-  height: 60px;
+  margin: 40px auto !important;
+  height: 80px;
   border-radius: 1rem;
   transition: 0.3s ease;
   background: var(--primary);
@@ -139,6 +158,8 @@ button {
     0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
   color: var(--btn-color);
   transition: 0.5s;
+  font-size: 30px;
+  font-weight: 700;
 }
 
 button:hover {
@@ -152,7 +173,6 @@ button:active {
   box-shadow: inset 0.2rem 0.2rem 1rem var(--primary-dark),
     inset -0.2rem -0.2rem 1rem var(--primary-light);
 }
-
 
 /* search */
 
@@ -168,13 +188,14 @@ button:active {
 .srch-section {
   width: 100%;
 }
+
 .srch-btn {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  font-size: 30px;
+  padding: 20px;
+  width: 30%;
 }
+
 /* table */
 table {
   width: 100%;
@@ -189,16 +210,25 @@ table {
   background: none;
   transition: 0.5s;
 }
+
 th {
   text-transform: uppercase;
   padding: 5px;
   font-size: 20px;
-  color: #6d5dfc ;
+  color: #6d5dfc;
+}
+
+td{
+  font-size: 30px;
+  height: 20px;
+  font-weight: 700;
+  margin: 10px !important;
 }
 
 table button {
-  width: 70%;
+  width: 80%;
 }
+
 #deleteBtn {
   background-color: rgba(255, 0, 0, 0.782);
   box-shadow: inset 0.2rem 0.2rem 1rem #ff2424,
@@ -210,4 +240,28 @@ table button {
 #deleteBtn:active {
   box-shadow: inset 0.2rem 0.2rem 1rem rgb(86, 0, 0),
     inset -0.2rem -0.2rem 1rem red;
+}
+
+
+@media screen and (max-width: 991px) {
+
+td {
+    font-size: 20px;
+  }
+
+#update{
+  width: 50%;
+  font-size: 20px;
+  height: fit-content;
+  margin: 0% !important;
+}
+#deleteBtn {
+  width: 50%;
+  font-size: 20px;
+  height: fit-content;
+  margin: 10% 0% !important;
+}
+ 
+
+
 }

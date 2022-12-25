@@ -117,8 +117,8 @@ function showData() {
               <td>${proData[i].total}</td>
               <td>${proData[i].category}</td>
              
-              <td><button onClick="updateData(${i})" id="update"> update</button></td>
-              <td><button onClick="deleteData(${i})" id="deleteBtn">delete</button></td>
+              <td><button class="btn" onClick="updateData(${i})" id="update"> update</button></td>
+              <td><button class="btn" onClick="deleteData(${i})" id="deleteBtn">delete</button></td>
             </tr>
   `;
  }
