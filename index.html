@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <title>CRUD_PROJECT</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- FONTS------------------------ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+    rel="stylesheet">
+
+  <!-- /////BOOTSTRAP-FILES//////// -->
+    
+  <link href="./css/bootstrap.min.css" rel="stylesheet" />
+  <link href="./css/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- CSS FILES------------------------ -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="crud container-fluid  ">
+    <button class="theme-changer  ">Change Theme</button>
+    <h2>CRUD PROJECT</h2>
+   
+    <div class="inputs row">
+
+      <label for="tilte col-12">Title :
+        <input type="text" id="title" placeholder="title">
+      </label>
+
+      <div class="price-container col-12 ">
+
+       
+
+        <label for="price ">Price :
+          <input type="number" onkeyup="getTotal()" id="price" placeholder="price">
+        </label>
+        <label for="taxes">Taxes :
+          <input type="number" onkeyup="getTotal()" id="taxes" placeholder="taxes">
+        </label>
+        <label for="ads ">Ads :
+          <input type="number" onkeyup="getTotal()" id="ads" placeholder="ads">
+        </label>
+        <label for="discount ">Discount :
+          <input type="number" onkeyup="getTotal()" id="discount" placeholder="discount">
+        </label>
+        <div class="total" id="total">total:</div>
+      
+   
+
+      </div>
+
+      <label for="count col-12">count
+        <input type="number" id="count" placeholder="count">
+      </label>
+      <label for="category col-12">category
+        <input type="text" id="category" placeholder="category">
+      </label>
+      <button id="submit">Create</button>
+    </div>
+
+
+    <div class="outputs row">
+      <div class="srch-section col-12">
+        <input onkeyup="searchData(this.value)" type="text" id="search" placeholder="search">
+        <div class="srch-btn">
+          <button onclick="getSrchMode(this.id)" id="searchTitle">search by title</button>
+          <button onclick="getSrchMode(this.id)" id="searchCategory">search by categoty</button>
+        </div>
+      </div>
+      <table class="col-12">
+
+        <tr>
+          <th>id</th>
+          <th>title</th>
+          <th>price</th>
+          <th>taxes</th>
+          <th>ads</th>
+          <th>discount</th>
+          <th>total</th>
+          <th>category</th>
+          <th>update</th>
+          <th>delete</th>
+        </tr>
+        <tbody id="tbody">
+
+
+        </tbody>
+      </table>
+    </div>
+    
+  </div>
+
+  <script src="js/main.js"></script>
+  
+
+</body>
+
+</html>

@@ -1,0 +1,213 @@
+:root {
+  --primary-light: #8abdff;
+  --primary: #6d5dfc;
+  --white: #ffffff;
+  --greyLight-1: #e4ebf5;
+  --greyLight-2: #c8d0e7;
+  --primary-dark: #5b0eeb;
+  --text-color :black;
+  --btn-color :black;
+}
+.dark-theme-var{
+ --primary-light: #000000;
+  --primary: #040023;
+  --white: #313131;
+  --greyLight-1: #1e2127;
+  --greyLight-2: #000000;
+  --primary-dark: #1f0158;
+   --text-color :white;
+   --btn-color :white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: "Cairo", sans-serif;
+  font-size: 18px;
+  color: var(--text-color);
+}
+body{
+  position:relative ;
+  background: var(--greyLight-1);
+}
+.theme-changer{
+position: absolute;
+top: 2%;
+right: 2%;
+margin: 0%;
+width: fit-content;
+height: fit-content;
+padding: 10px;
+font-size: 16px;
+letter-spacing: 1px;
+background-color:transparent;
+border: solid 2px #5b0eeb;
+color: #5b0eeb;
+box-shadow: none;
+}
+
+
+.crud {
+  width: 90%;
+  height: fit-content;
+
+  padding: 2% 5%;
+  background: var(--greyLight-1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: 700;
+  color: #6d5dfc;
+}
+
+.price-container {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+}
+.price-container input {
+  width: 90%;
+}
+/* inputs */
+input {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px 5px;
+  box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2),
+    inset -0.2rem -0.2rem 0.5rem var(--white);
+  background: none;
+  transition: 0.5s;
+  position: relative;
+}
+
+label {
+  color: transparent;
+  font-size: 14px;
+}
+
+label:focus-within {
+  color: var(--text-color);
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2),
+    -0.2rem -0.2rem 0.5rem var(--white);
+}
+input:hover {
+  box-shadow: inset 0.5rem 0.5rem 1rem var(--greyLight-2),
+    inset -0.5rem -0.5rem 1rem var(--white);
+}
+
+.total {
+  color: white;
+  width: 20%;
+  background-color: #6d5dfc;
+  border-radius: 5px;
+  padding: 8px;
+  margin-top: 25px;
+  box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2),
+    -0.2rem -0.2rem 0.5rem var(--white);
+}
+
+
+/* buttons */
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin: 10px auto;
+  width: 40%;
+  height: 60px;
+  border-radius: 1rem;
+  transition: 0.3s ease;
+  background: var(--primary);
+  box-shadow: inset 0.2rem 0.2rem 1rem var(--primary-light),
+    inset -0.2rem -0.2rem 1rem var(--primary-dark),
+    0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
+  color: var(--btn-color);
+  transition: 0.5s;
+}
+
+button:hover {
+  color: var(--text-color);
+  background-color: #6d5dfca6;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+button:active {
+  box-shadow: inset 0.2rem 0.2rem 1rem var(--primary-dark),
+    inset -0.2rem -0.2rem 1rem var(--primary-light);
+}
+
+
+/* search */
+
+.outputs {
+  width: 100%;
+  padding: 0% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.srch-section {
+  width: 100%;
+}
+.srch-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+/* table */
+table {
+  width: 100%;
+  text-align: center;
+  transition: 0.3s ease;
+  margin-top: 15px;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 20px 5px;
+  box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2),
+    inset -0.2rem -0.2rem 0.5rem var(--white);
+  background: none;
+  transition: 0.5s;
+}
+th {
+  text-transform: uppercase;
+  padding: 5px;
+  font-size: 20px;
+  color: #6d5dfc ;
+}
+
+table button {
+  width: 70%;
+}
+#deleteBtn {
+  background-color: rgba(255, 0, 0, 0.782);
+  box-shadow: inset 0.2rem 0.2rem 1rem #ff2424,
+    inset -0.2rem -0.2rem 1rem rgb(255, 124, 124),
+    0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
+  color: var(--text-color);
+}
+
+#deleteBtn:active {
+  box-shadow: inset 0.2rem 0.2rem 1rem rgb(86, 0, 0),
+    inset -0.2rem -0.2rem 1rem red;
+}
