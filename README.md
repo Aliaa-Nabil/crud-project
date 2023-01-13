@@ -4,10 +4,10 @@
 <p><img src="https://cdn.dribbble.com/users/7295990/screenshots/20320813/media/a2a59a5eff1004950fbef6bed0c7b5f4.png?compress=1&resize=768x576&vertical=top" alt="crud website" /></p>
 
 
-## 💻 Live website :
+## 💻 Live_website :
 <a href="https://crud-project-purple.netlify.app/">crud-project-purple.netlify.app//</a>
 
-## 📫 Contact me :
+## 📫 Contact_me :
 <br>
 
 <div id="badges" align="left">
